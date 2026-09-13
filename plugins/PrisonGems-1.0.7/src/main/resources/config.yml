@@ -1,0 +1,27 @@
+# The fixed number of Gems awarded when a player mines a block in any prison area.
+gems-per-block: 1
+
+# A prison starts regenerating only when its remaining template blocks are below this percentage
+# of the non-air blocks present when /prison capture <area> was run. Player-placed blocks do not count.
+reset-threshold-percent: 40.0
+
+# The integrity check is a safety net for explosions or changes from other plugins.
+integrity-check-interval-seconds: 15
+
+# Maximum block positions restored per server tick. Raise slowly only after load testing.
+reset-blocks-per-tick: 500
+
+# Show a particle outline around each configured prison area.
+show-border-particles: true
+border-particle: END_ROD
+border-particle-spacing: 2
+border-particle-interval-ticks: 10
+
+# Set this false if another plugin owns the sidebar display. Gems are still stored in the scoreboard.
+show-gems-in-sidebar: true
+
+# False prevents creative-mode players from earning Gems while testing or building.
+reward-creative-mode: false
+
+# Areas are normally created with /prison create and saved here automatically.
+areas: {}

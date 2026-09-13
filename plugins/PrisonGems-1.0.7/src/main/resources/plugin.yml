@@ -1,0 +1,17 @@
+name: PrisonGems
+version: '1.0.7'
+main: com.william.prisongems.PrisonGemsPlugin
+api-version: '26.2'
+author: William
+description: Regenerating prison mines with a Gems scoreboard currency.
+commands:
+  prison:
+    description: Teleport to and manage prison mines.
+    usage: /prison <area|list|status|create|setspawn|capture|delete|reload>
+permissions:
+  prisongems.use:
+    description: Use prison teleport and status commands.
+    default: true
+  prisongems.admin:
+    description: Manage prison areas and templates.
+    default: op
